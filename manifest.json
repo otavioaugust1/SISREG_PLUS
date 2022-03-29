@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "SISREG PLUS",
+    "description": "R",
+    "author":{
+        "My Name":"Otavio Augusto",
+        "My e-mail":"otavioaugust@gmail.com",
+        "My Whatsapp":"+5561982403370",
+        "Location":"Brazil, DF, Brasilia"    
+    } ,
+    "browser_action":{
+        "default_title": "SISREG PLUS",
+        "default_icon":"sisreg_p.png",
+        "default_popup": "index.html"
+        
+    },
+    "icons":{
+        "128":"icone128.png"
+    },
+    "content_scripts": [
+        {
+            "matches":["https://sisregiiihomologacao.saude.gov.br/*"],
+            "html": ["index.html"],
+            "css":["style.css"]
+        }
+    ]
+
+}
