@@ -22,7 +22,7 @@
 
     "content_scripts": [
         {
-            "matches": ["*://*.gov.br/cgi-bin/config_perfil*"],        
+            "matches": ["https://sisregiiihomologacao.saude.gov.br/cgi-bin/autorizador"],        
             "css":["css/style.css"]       
         }
     ]
